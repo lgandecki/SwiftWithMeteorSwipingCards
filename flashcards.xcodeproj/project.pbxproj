@@ -7,12 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29AEC3E9E9D45EE490400775 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 379146E190346C60881A64B7 /* libPods.a */; };
 		FF143FD11AC0FABC0041D95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF143FD01AC0FABC0041D95D /* AppDelegate.swift */; };
 		FF143FD31AC0FABC0041D95D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF143FD21AC0FABC0041D95D /* ViewController.swift */; };
 		FF143FD61AC0FABC0041D95D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF143FD41AC0FABC0041D95D /* Main.storyboard */; };
 		FF143FD81AC0FABC0041D95D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF143FD71AC0FABC0041D95D /* Images.xcassets */; };
-		FF143FDB1AC0FABC0041D95D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF143FD91AC0FABC0041D95D /* LaunchScreen.xib */; };
 		FF143FE71AC0FABC0041D95D /* flashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF143FE61AC0FABC0041D95D /* flashcardsTests.swift */; };
+		FF143FF21AC0FBC00041D95D /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF143FF11AC0FBC00041D95D /* CustomObject.m */; };
+		FF143FF71AC0FCE50041D95D /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF143FF61AC0FCE50041D95D /* DraggableViewBackground.swift */; };
+		FF143FF91AC0FCF30041D95D /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF143FF81AC0FCF30041D95D /* DraggableView.swift */; };
+		FF143FFB1AC0FD030041D95D /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF143FFA1AC0FD030041D95D /* OverlayView.swift */; };
+		FF143FFD1AC1005E0041D95D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF143FFC1AC1005E0041D95D /* LoginViewController.xib */; };
+		FF143FFF1AC100870041D95D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF143FFE1AC100870041D95D /* LoginViewController.swift */; };
+		FF1440081AC1046B0041D95D /* green_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440001AC1046B0041D95D /* green_light.png */; };
+		FF1440091AC1046B0041D95D /* StampWrong.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440011AC1046B0041D95D /* StampWrong.png */; };
+		FF14400A1AC1046B0041D95D /* StampBlackout.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440021AC1046B0041D95D /* StampBlackout.png */; };
+		FF14400B1AC1046B0041D95D /* StampObvious.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440031AC1046B0041D95D /* StampObvious.png */; };
+		FF14400C1AC1046B0041D95D /* StampCorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440041AC1046B0041D95D /* StampCorrect.png */; };
+		FF14400D1AC1046B0041D95D /* green_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440051AC1046B0041D95D /* green_light@2x.png */; };
+		FF14400E1AC1046B0041D95D /* red_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440061AC1046B0041D95D /* red_light.png */; };
+		FF14400F1AC1046B0041D95D /* red_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440071AC1046B0041D95D /* red_light@2x.png */; };
+		FF1440241AC104E10041D95D /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440111AC104E10041D95D /* 640x1136.png */; };
+		FF1440251AC104E10041D95D /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440121AC104E10041D95D /* 640x960.png */; };
+		FF1440261AC104E10041D95D /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440131AC104E10041D95D /* AppIcon29x29.png */; };
+		FF1440271AC104E10041D95D /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440141AC104E10041D95D /* AppIcon29x29@2x.png */; };
+		FF1440281AC104E10041D95D /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440151AC104E10041D95D /* AppIcon40x40.png */; };
+		FF1440291AC104E10041D95D /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440161AC104E10041D95D /* AppIcon40x40@2x.png */; };
+		FF14402A1AC104E10041D95D /* AppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440171AC104E10041D95D /* AppIcon50x50.png */; };
+		FF14402B1AC104E10041D95D /* AppIcon50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440181AC104E10041D95D /* AppIcon50x50@2x.png */; };
+		FF14402C1AC104E10041D95D /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440191AC104E10041D95D /* AppIcon57x57.png */; };
+		FF14402D1AC104E10041D95D /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF14401A1AC104E10041D95D /* AppIcon57x57@2x.png */; };
+		FF14402E1AC104E10041D95D /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = FF14401B1AC104E10041D95D /* AppIcon60x60.png */; };
+		FF14402F1AC104E10041D95D /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF14401C1AC104E10041D95D /* AppIcon60x60@2x.png */; };
+		FF1440301AC104E10041D95D /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = FF14401D1AC104E10041D95D /* AppIcon72x72.png */; };
+		FF1440311AC104E10041D95D /* AppIcon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF14401E1AC104E10041D95D /* AppIcon72x72@2x.png */; };
+		FF1440321AC104E10041D95D /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = FF14401F1AC104E10041D95D /* AppIcon76x76.png */; };
+		FF1440331AC104E10041D95D /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440201AC104E10041D95D /* AppIcon76x76@2x.png */; };
+		FF1440341AC104E10041D95D /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440211AC104E10041D95D /* iTunesArtwork.png */; };
+		FF1440351AC104E10041D95D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440221AC104E10041D95D /* iTunesArtwork@2x.png */; };
+		FF1440361AC104E10041D95D /* mainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1440231AC104E10041D95D /* mainMenu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +59,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A6D362E68D237C2A537991 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		010E66278143A5320B570FF3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		379146E190346C60881A64B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF143FCB1AC0FABC0041D95D /* flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF143FCF1AC0FABC0041D95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF143FD01AC0FABC0041D95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF143FD21AC0FABC0041D95D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF143FD51AC0FABC0041D95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF143FD71AC0FABC0041D95D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FF143FDA1AC0FABC0041D95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF143FE01AC0FABC0041D95D /* flashcardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flashcardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF143FE51AC0FABC0041D95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF143FE61AC0FABC0041D95D /* flashcardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashcardsTests.swift; sourceTree = "<group>"; };
+		FF143FF01AC0FBC00041D95D /* flashcards-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flashcards-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF143FF11AC0FBC00041D95D /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
+		FF143FF31AC0FBEC0041D95D /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		FF143FF61AC0FCE50041D95D /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
+		FF143FF81AC0FCF30041D95D /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		FF143FFA1AC0FD030041D95D /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		FF143FFC1AC1005E0041D95D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FF143FFE1AC100870041D95D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FF1440001AC1046B0041D95D /* green_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_light.png; sourceTree = "<group>"; };
+		FF1440011AC1046B0041D95D /* StampWrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampWrong.png; sourceTree = "<group>"; };
+		FF1440021AC1046B0041D95D /* StampBlackout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampBlackout.png; sourceTree = "<group>"; };
+		FF1440031AC1046B0041D95D /* StampObvious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampObvious.png; sourceTree = "<group>"; };
+		FF1440041AC1046B0041D95D /* StampCorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampCorrect.png; sourceTree = "<group>"; };
+		FF1440051AC1046B0041D95D /* green_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green_light@2x.png"; sourceTree = "<group>"; };
+		FF1440061AC1046B0041D95D /* red_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_light.png; sourceTree = "<group>"; };
+		FF1440071AC1046B0041D95D /* red_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_light@2x.png"; sourceTree = "<group>"; };
+		FF1440111AC104E10041D95D /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 640x1136.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/640x1136.png"; sourceTree = "<group>"; };
+		FF1440121AC104E10041D95D /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 640x960.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/640x960.png"; sourceTree = "<group>"; };
+		FF1440131AC104E10041D95D /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon29x29.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon29x29.png"; sourceTree = "<group>"; };
+		FF1440141AC104E10041D95D /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		FF1440151AC104E10041D95D /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon40x40.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon40x40.png"; sourceTree = "<group>"; };
+		FF1440161AC104E10041D95D /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon40x40@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		FF1440171AC104E10041D95D /* AppIcon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon50x50.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon50x50.png"; sourceTree = "<group>"; };
+		FF1440181AC104E10041D95D /* AppIcon50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon50x50@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon50x50@2x.png"; sourceTree = "<group>"; };
+		FF1440191AC104E10041D95D /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon57x57.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon57x57.png"; sourceTree = "<group>"; };
+		FF14401A1AC104E10041D95D /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon57x57@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon57x57@2x.png"; sourceTree = "<group>"; };
+		FF14401B1AC104E10041D95D /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon60x60.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon60x60.png"; sourceTree = "<group>"; };
+		FF14401C1AC104E10041D95D /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon60x60@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		FF14401D1AC104E10041D95D /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon72x72.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon72x72.png"; sourceTree = "<group>"; };
+		FF14401E1AC104E10041D95D /* AppIcon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon72x72@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon72x72@2x.png"; sourceTree = "<group>"; };
+		FF14401F1AC104E10041D95D /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon76x76.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon76x76.png"; sourceTree = "<group>"; };
+		FF1440201AC104E10041D95D /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon76x76@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		FF1440211AC104E10041D95D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/iTunesArtwork.png"; sourceTree = "<group>"; };
+		FF1440221AC104E10041D95D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		FF1440231AC104E10041D95D /* mainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainMenu.png; path = "../../../../TinderSimpleSwipeCards/testing swiping/App Icon [Squared]/mainMenu.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AEC3E9E9D45EE490400775 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +127,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D46875F76F1FC597797A95D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379146E190346C60881A64B7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0BBC324B06072AF15E7A6A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				010E66278143A5320B570FF3 /* Pods.debug.xcconfig */,
+				00A6D362E68D237C2A537991 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FF143FC21AC0FABC0041D95D = {
 			isa = PBXGroup;
 			children = (
 				FF143FCD1AC0FABC0041D95D /* flashcards */,
 				FF143FE31AC0FABC0041D95D /* flashcardsTests */,
 				FF143FCC1AC0FABC0041D95D /* Products */,
+				A0BBC324B06072AF15E7A6A8 /* Pods */,
+				6D46875F76F1FC597797A95D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +167,19 @@
 		FF143FCD1AC0FABC0041D95D /* flashcards */ = {
 			isa = PBXGroup;
 			children = (
+				FF143FFC1AC1005E0041D95D /* LoginViewController.xib */,
 				FF143FD01AC0FABC0041D95D /* AppDelegate.swift */,
 				FF143FD21AC0FABC0041D95D /* ViewController.swift */,
 				FF143FD41AC0FABC0041D95D /* Main.storyboard */,
 				FF143FD71AC0FABC0041D95D /* Images.xcassets */,
-				FF143FD91AC0FABC0041D95D /* LaunchScreen.xib */,
 				FF143FCE1AC0FABC0041D95D /* Supporting Files */,
+				FF143FF11AC0FBC00041D95D /* CustomObject.m */,
+				FF143FF31AC0FBEC0041D95D /* CustomObject.h */,
+				FF143FF01AC0FBC00041D95D /* flashcards-Bridging-Header.h */,
+				FF143FF61AC0FCE50041D95D /* DraggableViewBackground.swift */,
+				FF143FF81AC0FCF30041D95D /* DraggableView.swift */,
+				FF143FFA1AC0FD030041D95D /* OverlayView.swift */,
+				FF143FFE1AC100870041D95D /* LoginViewController.swift */,
 			);
 			path = flashcards;
 			sourceTree = "<group>";
@@ -90,6 +187,15 @@
 		FF143FCE1AC0FABC0041D95D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FF1440101AC104D30041D95D /* App Icon [Squared] */,
+				FF1440001AC1046B0041D95D /* green_light.png */,
+				FF1440011AC1046B0041D95D /* StampWrong.png */,
+				FF1440021AC1046B0041D95D /* StampBlackout.png */,
+				FF1440031AC1046B0041D95D /* StampObvious.png */,
+				FF1440041AC1046B0041D95D /* StampCorrect.png */,
+				FF1440051AC1046B0041D95D /* green_light@2x.png */,
+				FF1440061AC1046B0041D95D /* red_light.png */,
+				FF1440071AC1046B0041D95D /* red_light@2x.png */,
 				FF143FCF1AC0FABC0041D95D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +218,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FF1440101AC104D30041D95D /* App Icon [Squared] */ = {
+			isa = PBXGroup;
+			children = (
+				FF1440111AC104E10041D95D /* 640x1136.png */,
+				FF1440121AC104E10041D95D /* 640x960.png */,
+				FF1440131AC104E10041D95D /* AppIcon29x29.png */,
+				FF1440141AC104E10041D95D /* AppIcon29x29@2x.png */,
+				FF1440151AC104E10041D95D /* AppIcon40x40.png */,
+				FF1440161AC104E10041D95D /* AppIcon40x40@2x.png */,
+				FF1440171AC104E10041D95D /* AppIcon50x50.png */,
+				FF1440181AC104E10041D95D /* AppIcon50x50@2x.png */,
+				FF1440191AC104E10041D95D /* AppIcon57x57.png */,
+				FF14401A1AC104E10041D95D /* AppIcon57x57@2x.png */,
+				FF14401B1AC104E10041D95D /* AppIcon60x60.png */,
+				FF14401C1AC104E10041D95D /* AppIcon60x60@2x.png */,
+				FF14401D1AC104E10041D95D /* AppIcon72x72.png */,
+				FF14401E1AC104E10041D95D /* AppIcon72x72@2x.png */,
+				FF14401F1AC104E10041D95D /* AppIcon76x76.png */,
+				FF1440201AC104E10041D95D /* AppIcon76x76@2x.png */,
+				FF1440211AC104E10041D95D /* iTunesArtwork.png */,
+				FF1440221AC104E10041D95D /* iTunesArtwork@2x.png */,
+				FF1440231AC104E10041D95D /* mainMenu.png */,
+			);
+			name = "App Icon [Squared]";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF143FEA1AC0FABC0041D95D /* Build configuration list for PBXNativeTarget "flashcards" */;
 			buildPhases = (
+				95527E98B72E0EFD6DBA286E /* Check Pods Manifest.lock */,
 				FF143FC71AC0FABC0041D95D /* Sources */,
 				FF143FC81AC0FABC0041D95D /* Frameworks */,
 				FF143FC91AC0FABC0041D95D /* Resources */,
+				425F39AB235D77DC40042741 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,9 +326,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1440241AC104E10041D95D /* 640x1136.png in Resources */,
+				FF1440271AC104E10041D95D /* AppIcon29x29@2x.png in Resources */,
+				FF1440091AC1046B0041D95D /* StampWrong.png in Resources */,
+				FF1440321AC104E10041D95D /* AppIcon76x76.png in Resources */,
+				FF14402D1AC104E10041D95D /* AppIcon57x57@2x.png in Resources */,
+				FF1440291AC104E10041D95D /* AppIcon40x40@2x.png in Resources */,
+				FF14400B1AC1046B0041D95D /* StampObvious.png in Resources */,
+				FF14400C1AC1046B0041D95D /* StampCorrect.png in Resources */,
+				FF1440301AC104E10041D95D /* AppIcon72x72.png in Resources */,
+				FF143FFD1AC1005E0041D95D /* LoginViewController.xib in Resources */,
+				FF1440341AC104E10041D95D /* iTunesArtwork.png in Resources */,
+				FF14400D1AC1046B0041D95D /* green_light@2x.png in Resources */,
+				FF14402B1AC104E10041D95D /* AppIcon50x50@2x.png in Resources */,
+				FF14400A1AC1046B0041D95D /* StampBlackout.png in Resources */,
+				FF14400E1AC1046B0041D95D /* red_light.png in Resources */,
+				FF1440331AC104E10041D95D /* AppIcon76x76@2x.png in Resources */,
+				FF14402F1AC104E10041D95D /* AppIcon60x60@2x.png in Resources */,
 				FF143FD61AC0FABC0041D95D /* Main.storyboard in Resources */,
-				FF143FDB1AC0FABC0041D95D /* LaunchScreen.xib in Resources */,
+				FF1440081AC1046B0041D95D /* green_light.png in Resources */,
+				FF1440351AC104E10041D95D /* iTunesArtwork@2x.png in Resources */,
+				FF14400F1AC1046B0041D95D /* red_light@2x.png in Resources */,
+				FF1440261AC104E10041D95D /* AppIcon29x29.png in Resources */,
+				FF1440281AC104E10041D95D /* AppIcon40x40.png in Resources */,
+				FF1440361AC104E10041D95D /* mainMenu.png in Resources */,
+				FF1440311AC104E10041D95D /* AppIcon72x72@2x.png in Resources */,
 				FF143FD81AC0FABC0041D95D /* Images.xcassets in Resources */,
+				FF14402C1AC104E10041D95D /* AppIcon57x57.png in Resources */,
+				FF1440251AC104E10041D95D /* 640x960.png in Resources */,
+				FF14402A1AC104E10041D95D /* AppIcon50x50.png in Resources */,
+				FF14402E1AC104E10041D95D /* AppIcon60x60.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +368,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		425F39AB235D77DC40042741 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95527E98B72E0EFD6DBA286E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF143FC71AC0FABC0041D95D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF143FFF1AC100870041D95D /* LoginViewController.swift in Sources */,
+				FF143FF71AC0FCE50041D95D /* DraggableViewBackground.swift in Sources */,
 				FF143FD31AC0FABC0041D95D /* ViewController.swift in Sources */,
+				FF143FF21AC0FBC00041D95D /* CustomObject.m in Sources */,
+				FF143FFB1AC0FD030041D95D /* OverlayView.swift in Sources */,
+				FF143FF91AC0FCF30041D95D /* DraggableView.swift in Sources */,
 				FF143FD11AC0FABC0041D95D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +441,6 @@
 				FF143FD51AC0FABC0041D95D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FF143FD91AC0FABC0041D95D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF143FDA1AC0FABC0041D95D /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,21 +527,28 @@
 		};
 		FF143FEB1AC0FABC0041D95D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010E66278143A5320B570FF3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = flashcards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "flashcards/flashcards-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FF143FEC1AC0FABC0041D95D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A6D362E68D237C2A537991 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = flashcards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "flashcards/flashcards-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +605,7 @@
 				FF143FEC1AC0FABC0041D95D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF143FED1AC0FABC0041D95D /* Build configuration list for PBXNativeTarget "flashcardsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +614,7 @@
 				FF143FEF1AC0FABC0041D95D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
