@@ -42,10 +42,12 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         super.init(frame: frame)
         super.layoutSubviews()
         setupView()
-//        setCustomItems()
-//        setItems()
-//        setStartCounterValues()
-//        setCounterValues()
+        setCustomItems()
+        setItems()
+        setStartCounterValues()
+        setCounterValues()
+        
+        setNotificationObservers()
         
         setLoadedCardsCap()
         createCards()
@@ -96,6 +98,43 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         addSubview(checkButton)
     }
     
+    func setCustomItems() {
+        customItemsToReLearn = self.meteor.collections["customItemsToReLearn"] as NSMutableArray
+        customItemsToRepeat = self.meteor.collections["customItemsToRepeat"] as NSMutableArray
+    }
+    
+    func setItems() {
+        addItemsToAllItems(customItemsToReLearn)
+        addItemsToAllItems(customItemsToRepeat)
+    }
+    
+    func addItemsToAllItems(items: NSMutableArray) {
+        var nextItem = NSDictionary()
+        for itemToRepeat in items {
+            nextItem = itemToRepeat as NSDictionary;
+            allItems.addObject(nextItem)
+        }
+    }
+    
+    func setStartCounterValues() {}
+    func setCounterValues() {}
+
+    func setNotificationObservers() {
+            let defaultCenter = NSNotificationCenter()
+            defaultCenter.addObserver(self, selector: "didReceiveUpdate", name: "added", object: nil)
+            defaultCenter.addObserver(self, selector: "didReceiveUpdate", name: "removed", object: nil)
+            defaultCenter.addObserver(self, selector: "didReceiveUpdate", name: "changed", object: nil)
+    }
+    
+    func didReceiveUpdate(notification: NSNotification) {
+            customItemsToReLearn = self.meteor.collections["customItemsToReLearn"] as NSMutableArray
+            setCustomItems()
+            setCounterValues()
+            setItems()
+            createCards()
+            displayCards()
+    }
+    
     func setLoadedCardsCap() {
         numLoadedCardsCap = 0;
         if (exampleCardLabels.count > MAX_BUFFER_SIZE) {
@@ -110,12 +149,23 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         if (numLoadedCardsCap > 0) {
             let cardFrame = CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT)
             
-            for cardLabel in exampleCardLabels {
-                var newCard = DraggableView(frame: cardFrame, information: cardLabel)
-                newCard.delegate = self;
+            for item in allItems {
+                var newCard = createItem(cardFrame: cardFrame, item: item as NSDictionary)
+//                var newCard = DraggableView(frame: cardFrame, backText: cardLabel)
                 allCards.addObject(newCard)
             }
         }
+    }
+    
+    func createItem(#cardFrame: CGRect, #item: NSDictionary) -> DraggableView {
+        var newItem = DraggableView(frame: cardFrame,
+            frontText: item.objectForKey("personalFront",
+                backText: item.objectForKey("personalBack",
+                    itemId: item.objectForKey("_id"))
+                
+                newItem.delegate = self
+            
+        return newItem
     }
     
     func displayCards() {

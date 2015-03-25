@@ -25,7 +25,8 @@ class DraggableView:UIView{
     
     var originalPoint = CGPoint()
     
-    var information = UILabel()
+    var backTextView = UITextView()
+    var frontTextView = UITextView()
     
     var panGestureRecognizer = UIPanGestureRecognizer()
     
@@ -34,12 +35,23 @@ class DraggableView:UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    convenience init(frame: CGRect, information: String) {
+
+    
+    convenience init(frame: CGRect, frontText: String, backText: String, itemId: String) {
         self.init(frame: frame)
         setupView()
         addOverlayView()
         addGestureRecognizer()
-        setInformation(information)
+        setText(frontText, view: self.frontTextView)
+        setText(backText, view: self.backTextView)
+    }
+    
+    func setText(text: String, view: UITextView) {
+//        view = UITextView(frame: CGRectMake(10, 10, 280, 376))
+//        view.setFont(UIFont.systemFontOfSize(16))
+//        view.text = text
+//        
+//        
     }
     
     required init(coder aDecoder: NSCoder) {
